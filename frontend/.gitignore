@@ -1,0 +1,62 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+
+# Firebase 설정 파일 — API 키 포함, Git에 기록하지 않음
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+lib/firebase_options.dart
+
+# Firebase Hosting 배포 캐시
+.firebase/
+
+# 배포 시크릿 메모 — OpenAI/OAuth/JWT/SMTP 키와 인프라 계정 비밀번호가
+# 평문으로 들어있어 Git에 절대 기록하지 않는다.
+docs/env.md
+
+# 로컬 전용 환경변수. 서버 비밀값이 섞여 있어 절대 커밋하지 않는다.
+.env
+.env.local

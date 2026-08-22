@@ -1,0 +1,80 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### macOS ###
+.DS_Store
+
+### Env secrets (local, per-machine — not shared with team) ###
+.env
+!.env.example
+
+### Project-local documents ###
+/doc/
+!/doc/
+!/doc/API.md
+
+### Python virtual environments ###
+**/.venv/
+**/.venv*/
+**/venv/
+**/env/
+
+### Python artifacts ###
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+### Claude Code (local, per-user — not shared with team) ###
+.claude/settings.local.json
+.claude/discord_config.json
+.claude/.headroom_wrap_marker.json
+.claude/discord_dispatch_state
+.claude/discord_dispatch_session_id
+.claude/logs/
+
+# Firebase service account key (절대 커밋 금지)
+firebase-service-account.json
+.claude/
+.serena/
+
+# Agent-isolated implementation worktrees
+.worktrees/
