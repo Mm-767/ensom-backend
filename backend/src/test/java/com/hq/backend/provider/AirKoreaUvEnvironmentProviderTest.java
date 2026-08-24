@@ -35,7 +35,7 @@ class AirKoreaUvEnvironmentProviderTest {
                 })
                 .andRespond(withSuccess(AIR_FIXTURE, MediaType.APPLICATION_JSON));
         server.expect(method(HttpMethod.GET)).andExpect(request -> {
-                    assertThat(request.getURI().getPath()).contains("getUVIdxV4");
+                    assertThat(request.getURI().getPath()).contains("getUVIdxV5");
                     assertThat(request.getURI().getQuery()).contains("areaNo=1100000000");
                 })
                 .andRespond(withSuccess(UV_FIXTURE, MediaType.APPLICATION_JSON));
@@ -81,7 +81,7 @@ class AirKoreaUvEnvironmentProviderTest {
         set(provider, "stationName", "종로구");
         set(provider, "measurementUrl", "https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty");
         set(provider, "uvAreaNo", "1100000000");
-        set(provider, "uvIndexUrl", "https://apis.data.go.kr/1360000/LivingWthrIdxServiceV4/getUVIdxV4");
+        set(provider, "uvIndexUrl", "https://apis.data.go.kr/1360000/LivingWthrIdxServiceV5/getUVIdxV5");
         set(provider, "kmaServiceKey", "kma-key");
         return provider;
     }
